@@ -42,3 +42,16 @@ socket.on('answers:sent', (answerId) => {
     console.error('Answer with id:' + answerId + ' was not found');
   }
 });
+
+socket.on('scene:action', (action) => {
+  console.log('scene:action ' + action);
+  if (action === 'next') {
+    request(config.unityUrl+'?command=change', (error) => {
+      if (error) console.error(error);
+    });
+  } else if (action === 'final') {
+    request(config.unityUrl+'?command=final', (error) => {
+      if (error) console.error(error);
+    });
+  }
+});
