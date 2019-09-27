@@ -1,0 +1,27 @@
+{
+  "name": "kursor-unity-proxy",
+  "version": "1.0.0",
+  "description": "Proxy of events of kursor app on heroku to local unity app",
+  "main": "app.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehimer/kursor-unity-proxy.git"
+  },
+  "author": "Denis Novikov (den-vse@yandex.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dehimer/kursor-unity-proxy/issues"
+  },
+  "homepage": "https://github.com/dehimer/kursor-unity-proxy#readme"
+}
