@@ -20,10 +20,6 @@ socket.on('auth:success', () => {
 socket.on('answers:all', (data) => {
   console.log('answers:all');
   answers = data;
-  console.log(answers);
-  // const sentAnswers = answers.filter((a) => a.sent);
-  // console.log('sentAnswers');
-  // console.log(sentAnswers);
 });
 
 socket.on('answers:new', (newAnswer) => {
